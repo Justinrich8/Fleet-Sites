@@ -1,0 +1,23 @@
+{
+    "$id": "Location",
+    "filter": {
+        "entityIds": ["YEXT_PUBLIC_LOCATION_ENTITY_ID"]
+    },
+    "source": "knowledgeGraph",
+    "fields": [
+        "name",
+        "logo",
+        "c_footerLogo",
+        "mainPhone",
+        "c_backgroundColor",
+        "emails",
+        "address",
+        "description"
+    ],
+    "localization": {
+        "locales": [
+            "en"
+        ],
+        "primary": false
+    }
+}
