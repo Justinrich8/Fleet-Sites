@@ -16,7 +16,11 @@ const transformColor = (color: string | undefined): string => {
 };
 
 const PageLayout = ({ children, data, templateData }: PageLayoutProps) => {
-  const backgroundColor = `--backgroundColor: ${transformColor(data?.c_backgroundColor)}`;
+  const backgroundColor = `
+    --backgroundColor: ${transformColor(data?.c_backgroundColor)};
+    --app-primary: ${templateData?.document?.c_primaryColor};
+    --app-secondary: ${templateData?.document?.c_secondaryColor};
+  `;
 
   return (
     <>
